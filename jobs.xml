@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/topbackgroundprofile">
+
+    <ImageView
+        android:id="@+id/back_jobs"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_arrow_back_white_24dp" />
+
+    <TextView
+        android:id="@+id/jobsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Jobs"
+        android:layout_marginTop="50dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="26dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/buttons_tab"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/jobsLabel"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/current"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:height="40dp"
+            android:textSize="16dp"
+            android:background="@drawable/jobs_button"
+            android:text="Current"/>
+
+        <Button
+            android:id="@+id/future"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:height="40dp"
+            android:background="@drawable/jobs_button"
+            android:text="Future"/>
+
+        <Button
+            android:id="@+id/applied"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffff"
+            android:height="40dp"
+
+            android:textStyle="bold"
+            android:textSize="18dp"
+
+            android:background="@drawable/jobs_button_clicked"
+            android:text="Applied"/>
+
+        <Button
+            android:id="@+id/past"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:height="40dp"
+            android:background="@drawable/jobs_button"
+            android:text="Past"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/no_jobs_title"
+        android:layout_below="@+id/buttons_tab"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/jobs_list"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/buttons_tab"
+        android:scrollbars="none"
+        android:layout_marginTop="10dp">
+    </ListView>
+
+</RelativeLayout>

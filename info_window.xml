@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/info_lay"
+    android:layout_width="match_parent"
+    android:minWidth="120dp"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:minHeight="80dp"
+    android:paddingRight="10dp">
+
+    <ImageView
+        android:id="@+id/info_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_flag_24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:minWidth="120dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Move sofa"
+            android:textColor="#FFf3ae1b"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/info_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Move sofa from 2nd floor to 1st"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:text="Check more"
+            android:textColor="#FFf3ae1b"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

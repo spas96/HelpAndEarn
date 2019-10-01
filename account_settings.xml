@@ -1,0 +1,184 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/topbackgroundprofile"
+    android:id="@+id/accountSettings_layout">
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+    <TextView
+        android:id="@+id/accLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Account Settings"
+        android:layout_marginTop="50dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="26dp"/>
+
+    <ImageView
+        android:id="@+id/save"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_save_white_24dp" />
+
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/shadow"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="100dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/scrollAcc"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        android:text="email"
+                        android:id="@+id/acc_email"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:text="Change Password"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="30dp"
+                        android:textColor="#f3ae1b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/oldpassword"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittextborder"
+                        android:ems="10"
+                        android:drawableLeft="@drawable/ic_lock_white_24dp"
+                        android:drawablePadding="10dp"
+                        android:hint="Old Password"
+                        android:textColor="#ffffff"
+                        android:textColorHint="#ffffff"
+                        android:inputType="textPassword" />
+
+                    <EditText
+                        android:id="@+id/newpassword"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:layout_alignLeft="@+id/oldpassword"
+                        android:layout_alignStart="@+id/oldpassword"
+                        android:layout_below="@+id/oldpassword"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittextborder"
+                        android:ems="10"
+                        android:drawableLeft="@drawable/ic_lock_white_24dp"
+                        android:drawablePadding="10dp"
+                        android:hint="New Password"
+                        android:textColor="#ffffff"
+                        android:textColorHint="#ffffff"
+                        android:inputType="textPassword" />
+
+
+                    <TextView
+                        android:text="Change Memorable Word"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="30dp"
+                        android:textColor="#f3ae1b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/oldmword"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittextborder"
+                        android:ems="10"
+                        android:drawableLeft="@drawable/ic_security_white_24dp"
+                        android:drawablePadding="10dp"
+                        android:hint="Old Memorable Word"
+                        android:textColor="#ffffff"
+                        android:textColorHint="#ffffff"
+                        android:inputType="textPassword" />
+
+                    <EditText
+                        android:id="@+id/newmword"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:layout_alignLeft="@+id/oldpassword"
+                        android:layout_alignStart="@+id/oldpassword"
+                        android:layout_below="@+id/oldpassword"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittextborder"
+                        android:ems="10"
+                        android:drawableLeft="@drawable/ic_security_white_24dp"
+                        android:drawablePadding="10dp"
+                        android:hint="New Memorable Word"
+                        android:textColor="#ffffff"
+                        android:textColorHint="#ffffff"
+                        android:inputType="textPassword" />
+
+                    <TextView
+                        android:text="Change search distance"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="30dp"
+                        android:textColor="#f3ae1b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <SeekBar
+                        android:id="@+id/distance_seekbar"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:progressDrawable="@drawable/orange_scrubber_progress"
+                        android:thumb="@drawable/orange_scrubber_control"
+                        android:layout_marginTop="10dp"/>
+
+
+                    <TextView
+                        android:id="@+id/selected_distance"
+                        android:text="5 km"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:textColor="#f3ae1b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+</RelativeLayout>

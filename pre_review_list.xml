@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/pre_review_title"
+        android:textAlignment="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="asd"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:id="@+id/pre_review_description"
+        android:paddingHorizontal="20dp"
+        android:textAlignment="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="asd"
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+        />
+</LinearLayout>

@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/topbackgroundprofile"
+    android:id="@+id/pre_review_layout">
+
+
+    <ImageView
+        android:id="@+id/back_pre_review"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_arrow_back_white_24dp" />
+
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:paddingHorizontal="30dp"
+        android:layout_below="@+id/back_pre_review"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"/>
+
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_below="@+id/heading"
+        android:textAlignment="center"/>
+
+    <ListView
+        android:id="@+id/help_requests"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/subtitle"
+        android:scrollbars="none"
+        android:layout_marginTop="10dp">
+    </ListView>
+</RelativeLayout>

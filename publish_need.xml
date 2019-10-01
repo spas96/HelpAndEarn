@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/topbackgroundprofile"
+    android:id="@+id/publish_layout">
+
+    <ImageView
+        android:id="@+id/back_publish"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/wrong" />
+
+    <TextView
+        android:id="@+id/main_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Publish help"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="26dp"/>
+
+    <EditText
+        android:id="@+id/title_help"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/main_text"
+        android:layout_centerHorizontal="true"
+        android:background="#11000000"
+        android:ems="10"
+        android:hint="Title*"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="10dp"
+        android:inputType="textPersonName"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"/>
+
+
+    <EditText
+        android:id="@+id/description_help"
+        android:layout_width="250dp"
+        android:layout_below="@+id/title_help"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:padding="10dp"
+        android:lines="5"
+        android:layout_marginTop="5dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:hint="Please provide some information about the help that you need!"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"/>
+    <TextView
+        android:id="@+id/char_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description_help"
+        android:text="100/200"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="180dp"
+        android:textStyle="italic"
+        android:textColor="#ffffff"/>
+    <EditText
+        android:id="@+id/help_img"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/char_count"
+        android:background="#11000000"
+        android:ems="10"
+        android:hint="Select image"
+        android:textColor="#ffffff"
+        android:paddingHorizontal="10dp"
+        android:textColorHint="#ffffff"
+        android:clickable="true"
+        android:focusableInTouchMode="false"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/help_date"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/help_img"
+        android:layout_marginTop="10dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:hint="Date you will need help*"
+        android:textColor="#ffffff"
+        android:paddingHorizontal="10dp"
+        android:textColorHint="#ffffff"
+        android:clickable="true"
+        android:focusableInTouchMode="false"
+        android:inputType="date" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@+id/help_date"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/time_cost">
+
+    <EditText
+        android:id="@+id/help_time"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/help_date"
+        android:layout_marginTop="10dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:paddingHorizontal="10dp"
+        android:hint="Time*"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:clickable="true"
+        android:focusableInTouchMode="false"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/award"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/help_date"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:paddingHorizontal="10dp"
+        android:hint="Award (£)"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:inputType="numberDecimal" />
+</LinearLayout>
+
+
+    <TextView
+        android:id="@+id/below"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time_cost"
+        android:text="Fields containing '*' are required"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/publish_button"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/below"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_button"
+        android:text="publish"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>
+

@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/topbackgroundprofile"
+    android:id="@+id/info_layout">
+
+
+        <ImageView
+            android:id="@+id/back_info"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Information"
+        android:layout_marginTop="50dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="26dp"/>
+
+
+    <ImageView
+        android:id="@+id/save_info"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_save_white_24dp" />
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/shadow"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="100dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/info_scroll"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        android:text=""
+                        android:id="@+id/info_email"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text=""
+                        android:id="@+id/info_names"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text=""
+                        android:id="@+id/info_bdate"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/info_info"
+                        android:layout_width="300dp"
+                        android:text=""
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:padding="10dp"
+                        android:lines="13"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittextborder"
+                        android:ems="10"
+                        android:hint="Please provide some information about yourself (skills ,qualities, ..) This will be helpful for easier job finding!"
+                        android:textColor="#ffffff"
+                        android:textColorHint="#ffffff"/>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+</RelativeLayout>
+

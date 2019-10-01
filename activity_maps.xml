@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/maps_view">
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/background_light"
+        app:menu="@menu/navbar"
+        android:id="@+id/bnve">
+    </android.support.design.widget.BottomNavigationView>
+
+    <Button
+        android:id="@+id/info_count"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/info_helpcount"
+        android:text="Please wait!"
+        android:textAllCaps="false" />
+
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="wrap_content"
+        android:id="@+id/map"
+        android:layout_height="match_parent"
+        tools:context="com.example.spas.HelpAndEarn.MapsActivity">
+    </fragment>
+    <ImageButton
+        android:id="@+id/add"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/add_button"/>
+
+</RelativeLayout>

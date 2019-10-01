@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/notification_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="No internet connection"
+        android:textSize="30dp"
+        android:layout_marginTop="50dp"/>
+
+    <ListView
+        android:id="@+id/notifications_list"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/subtitle"
+        android:layout_marginBottom="57dp"
+        android:scrollbars="none"/>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/background_light"
+        app:menu="@menu/navbar"
+        android:id="@+id/bnve">
+    </android.support.design.widget.BottomNavigationView>
+</RelativeLayout>

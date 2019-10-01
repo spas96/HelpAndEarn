@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/topbackgroundprofile"
+    android:id="@+id/files_layout">
+
+
+        <ImageView
+            android:id="@+id/back_files"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+    <TextView
+        android:id="@+id/accLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Files"
+        android:layout_marginTop="50dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="26dp"/>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/shadow"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="100dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+
+                <LinearLayout
+                    android:id="@+id/scrollAcc"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        android:text="s.spasov96@abv.bg"
+                        android:id="@+id/info_email"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp">
+                        <EditText
+                            android:id="@+id/upload"
+                            android:layout_gravity="left"
+                            android:layout_width="200dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/edittextborder"
+                            android:ems="10"
+                            android:drawableLeft="@drawable/ic_attach_file_white_24dp"
+                            android:drawablePadding="10dp"
+                            android:hint="Attach file"
+                            android:textColor="#ffffff"
+                            android:clickable="true"
+                            android:focusableInTouchMode="false"
+                            android:textColorHint="#ffffff" />
+
+                        <EditText
+                            android:id="@+id/file_name"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="200dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/edittextborder"
+                            android:ems="10"
+                            android:drawableLeft="@drawable/ic_mode_edit_white_24dp"
+                            android:drawablePadding="10dp"
+                            android:hint="File name"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#ffffff" />
+
+                        <Button
+                            android:id="@+id/upload_file"
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toLeftOf="@+id/oldpassword"
+                            android:background="@drawable/login_button"
+                            android:text="Upload"
+                            android:textColor="@android:color/white"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <ListView
+                        android:gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:divider="@null"
+                        android:scrollbars="none"
+                        android:layout_height="350dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/files_list">
+
+                    </ListView>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+</RelativeLayout>
+

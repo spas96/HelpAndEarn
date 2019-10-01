@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/top"
+        android:layout_height="200dp"
+        android:background="@drawable/topbackgroundprofile">
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="£ 0.00"
+            android:textColor="#ffffff"
+            android:textSize="24dp"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="24dp"/>
+
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_exit_to_app_white_24dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_image_black_24dp"
+            app:civ_border_color="#ffffff"
+            app:civ_border_width="1dp">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <ImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_add_a_photo_black_24dp">
+
+        </ImageView>
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#383838"
+        android:layout_marginBottom="57dp"
+        android:layout_below="@+id/top">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_img1"
+                android:layout_weight="1.0"
+                android:drawableTop="@drawable/ic_account_circle_yellow_24dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingTop="20dp"
+                android:textColor="#f3ae1b"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Account" />
+
+            <Button
+                android:id="@+id/files"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_img2"
+                android:layout_weight="1.0"
+                android:drawableTop="@drawable/ic_insert_drive_file_yellow_24dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingTop="20dp"
+                android:textColor="#f3ae1b"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Files" />
+
+            <Button
+                android:id="@+id/payments"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:layout_weight="1.0"
+                android:drawableTop="@drawable/ic_credit_card_yellow_24dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingTop="20dp"
+                android:textColor="#f3ae1b"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Payments" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/information"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_img4"
+                android:layout_weight="1.0"
+                android:drawableTop="@drawable/ic_info_yellow_24dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingTop="20dp"
+                android:textColor="#f3ae1b"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Information" />
+
+            <Button
+                android:id="@+id/jobs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_img5"
+                android:layout_weight="1.0"
+                android:drawableTop="@drawable/ic_work_yellow_24dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingTop="20dp"
+                android:textColor="#f3ae1b"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Jobs" />
+
+            <Button
+                android:id="@+id/helpa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_img6"
+                android:layout_weight="1.0"
+                android:drawableTop="@drawable/ic_help_yellow_24dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingTop="20dp"
+                android:textColor="#f3ae1b"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Help" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/background_light"
+        app:menu="@menu/navbar"
+        android:id="@+id/bnve">
+    </android.support.design.widget.BottomNavigationView>
+</RelativeLayout>
